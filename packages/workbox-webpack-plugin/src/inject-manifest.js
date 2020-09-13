@@ -6,7 +6,7 @@
   https://opensource.org/licenses/MIT.
 */
 
-const {RawSource} = require('webpack-sources');
+const {RawSource} = require('webpack').sources || require('webpack-sources');
 const {SingleEntryPlugin} = require('webpack');
 const replaceAndUpdateSourceMap = require(
     'workbox-build/build/lib/replace-and-update-source-map');

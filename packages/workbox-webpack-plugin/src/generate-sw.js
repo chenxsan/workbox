@@ -6,7 +6,7 @@
   https://opensource.org/licenses/MIT.
 */
 
-const {RawSource} = require('webpack-sources');
+const {RawSource} = require('webpack').sources || require('webpack-sources');
 const bundle = require('workbox-build/build/lib/bundle');
 const populateSWTemplate =
   require('workbox-build/build/lib/populate-sw-template');
